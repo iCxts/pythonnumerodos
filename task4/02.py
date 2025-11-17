@@ -52,6 +52,7 @@ class Magazine(LibraryItem):
     def __init__(self, title: str, author: str, publication_year: int, issue_number: int) -> None:
         super().__init__(title, author, publication_year)
         self.issue_number = int(issue_number)
+        
 
     def get_item_info(self) -> None:
         super().get_item_info()
