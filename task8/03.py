@@ -17,7 +17,7 @@ parse_shebang("./example2.txt")
 '''
 def parse_shebang(path: str) -> str | None:
     try:
-        with open(path, "r", encoding="utf-8") as f:
+        with open(path, "r", encoding = "utf-8") as f:
             first_line = f.readline().strip()
     except FileNotFoundError:
         return None
